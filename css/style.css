@@ -1,0 +1,66 @@
+/*PARAGRAPH CLASSES*/
+p {	
+	/*color: whitesmoke;*/
+	text-align: auto;
+	background-size: contain;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 1em;
+}
+.page_toes {
+	padding-top: 2em;
+	text-align: center;
+}
+.intro {
+
+}
+.body {
+
+}
+.outro {
+
+}
+/*HEADING CLASSES*/
+h1 {
+	color: rgb(218, 164, 32); /*goldenrod*/
+	padding-top: 2em;
+	padding-bottom: 2em;
+	text-align: center;
+	text-decoration-style: wavy;
+	font-size: 4.8em;
+	font-style: oblique;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+h1:hover,
+h1:focus {
+	color: rgb(184, 134, 11); /*dark goldenrod*/
+	text-shadow: rgb(218, 164, 32); /*goldenrod*/
+}
+h2 {
+	padding: center;
+	text-align: center;
+	position: relative;
+}
+/*DIV CLASSES*/
+.box {
+	color: rgb(245, 245, 245); /*whitesmoke*/
+	padding: 1em 1em;
+	background-image: url(../img/high-desert-entrance.jpg);
+	background-size: auto;
+	background-position: center;
+	margin: 0 auto;
+	font-family: serif;
+}
+/*LINK CLASSES*/
+.exLink {
+	color: rgb(218, 164, 32); /*goldenrod*/
+	text-decoration: none;
+}
+.exLink:hover,
+.exLink:focus {
+	color: rgb(245, 245, 245); /*whitesmoke*/
+	text-shadow: rgb(218, 164, 32); /*goldenrod*/
+}
+/*UNORDERED LIST CLASSES*/
+ul {
+	list-style-type: none;
+}
