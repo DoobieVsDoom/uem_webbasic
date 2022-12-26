@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UEM Sign Up</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+<link href="default_signup.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+<style>
+p {font-family: 'Didact Gothic', sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.form {
+  background-color: rgba(184, 134, 11, .8);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+button.form:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 12%;
+  border-radius: 18%;
+}
+
+.formContainer {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#"></a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="signup.html#signup" accesskey="1" title="">Sign Up</a></li>
+				<li><a href="more_info.html#" accesskey="1" title="">More Info</a></li>
+				<li><a href="more_info.html#about_us" accesskey="3" title="">About Us</a></li>
+				<li><a href="signup.html#contact_us" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Umnotho Ebantwini Movement</h2>
+			<span class="byline">buy from your own</span>
+		</div>
+		<ul class="actions">
+			<li><a href="index.html#" class="button">HOMEPAGE</a></li>
+		</ul>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="three-column" class="container">
+		<div class="title" id="signup">
+			<h2>Sign Up</h2>
+			<span class="byline">Take the first steps in becoming a member of Umnotho Ebantwini Movement.</span>
+		</div>		
+		<p>
+			<h2>Click Below to Sign Up for UEM Membership</h2>
+
+			<button class="form" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+			<div id="id01" class="modal">
+  				<form class="modal-content animate" action="uemDBPDO.php" method="POST">
+    				<div class="imgcontainer">
+      					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+      					<img src="images/avatar.jpg" alt="Avatar" class="avatar">
+    				</div>
+
+    				<div class="formContainer">
+      					<label for="fname"><b>First Name *</b></label>
+      					<input type="text" placeholder="Enter First Name" name="firstName" required>
+
+      					<label for="lname"><b>Last Name *</b></label>
+      					<input type="text" placeholder="Enter Last Name" name="lastName" required>
+
+      					<label for="uname"><b>User Name *</b></label>
+      					<input type="text" placeholder="Enter a Username" name="userName" required>
+
+      					<label for="uname"><b>Gender *</b></label>
+      					<input type="text" placeholder="Female, Male or Other" name="genderType" required>
+
+      					<label for="ename"><b>Email *</b></label>
+      					<input type="text" placeholder="Enter Email" name="emailAddress" required>
+
+      					<label for="cell"><b>Cell Number *</b></label>
+      					<input type="text" placeholder="eg. +27 65 789 1011" name="cellNumber" required>
+
+      					<label for="sname"><b>Home Address line 1 *</b></label>
+      					<input type="text" placeholder="House number and Street" name="homeAddressOne" required>
+
+      					<label for="subname"><b>Home Address line 2 *</b></label>
+      					<input type="text" placeholder="Suburb/Town/Township" name="homeAddressTwo" required>
+
+      					<label for="cname"><b>City *</b></label>
+      					<input type="text" placeholder="City" name="cityName" required>
+
+      					<label for="post"><b>Postal Code *</b></label>
+      					<input type="text" placeholder="Postal code" name="postalCode" required>
+
+      					<label for="secname"><b>Sector </b></label>
+      					<input type="text" placeholder="Agriculture, Construction, Finance, IT, Education, Mining, etc" name="sectorName" required>
+
+      					<label for="psw"><b>Password</b></label>
+      					<input type="password" placeholder="Enter Password" name="psw" required>
+
+      					<label for="psw"><b>Confirm Password</b></label>
+      					<input type="password" placeholder="Confirm Password" name="confirmPsw" required>
+
+      					<label>
+        					<input type="checkbox" checked="checked" name="Emp" value="e"> Employed
+      					</label>
+
+      					<label>
+        					<input type="checkbox" checked="checked" name="selfEmp" value="s"> Self-Employed
+      					</label>
+
+      					<label>
+      						<input type="checkbox" checked="" name="unEmp" value="u"> Unemployed
+      					</label>
+        
+      					<label>
+        					<input type="checkbox" checked="checked" name="remember" value="r"> Remember me
+      					</label>
+
+      					<button class="form" type="submit">Sign Up</button>
+    				</div>
+
+    				<div class="formContainer" style="background-color:#f1f1f1">
+    				</div>
+  				</form>
+			</div>
+
+			<script>
+			// Get the modal
+			var modal = document.getElementById('id01');
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			</script>
+		</p>
+		<!--XXXXXXXXXXXXXXXXX -->
+	</div>
+</div>
+<div id="welcome">
+	<div class="container">
+		<div class="title">
+			<h2><a id="contact_us">Contact Details</a></h2>
+			<span class="byline">We are always looking forward to hearing from you. Send an Email.</span>
+		</div> 
+		<p><strong><a href="https://umnothoebantwini@gmail.com" class="button"> umnothoebantwini</a></strong></p>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; All rights reserved. | Designed in <a>Collaboration</a> | Stay Invested <a>EVOL</a>.</p>
+</div>
+</body>
+</html>
